@@ -4,6 +4,6 @@ metadata:
   name: roboshop
   labels:
     project: Devops
-    Env: Devops
-    Course: 90 
+    Env: Dev
+    Course: Join
 
