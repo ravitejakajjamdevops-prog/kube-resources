@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx  
+  resources:
+    requests:
+      #soft limits
+      cpu: "250m"
+      memory: "256Mi"
+      #hard limits
+    limits:
+      cpu: "1000m"
+      memory: "1024Mi"  
