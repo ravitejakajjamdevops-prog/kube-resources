@@ -3,13 +3,13 @@ kind: Pod
 metadata: 
   name: empty
 spec:
-  containers:
+  container:
     image: nginx
     name: nginx
     volumeMounts:
     - mountPath: /var/log/nginx
       name: nginx-logs
-  containers:
+  container:
     image: almalinux:9
     name: almalinux
     volumeMounts:
