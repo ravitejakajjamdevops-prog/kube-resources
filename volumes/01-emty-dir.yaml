@@ -3,20 +3,19 @@ kind: Pod
 metadata: 
   name: empty
 spec:
-  container:
-    image: nginx
+  containers:
+  - image: nginx
     name: nginx
     volumeMounts:
     - mountPath: /var/log/nginx
       name: nginx-logs
-  container:
-    image: almalinux:9
+  - image: almalinux:9
     name: almalinux
     volumeMounts:
     - mountPath: /var/log/nginx
       name: nginx-logs
       readOnly: true
-volume:
-- name: nginx-logs
-  emptyDir: 
+  volumes:
+  - name: nginx-logs
+    emptyDir: 
     sizeLimit: 500Mi
