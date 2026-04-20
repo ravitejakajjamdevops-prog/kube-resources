@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+piVersion: apps/v1
 kind: Deployment
 metadata: 
   name: nginx-deploy
@@ -6,7 +6,7 @@ metadata:
     project: roboshop
     component: frontend
   annotations:
-    kubernets.io/change-cause: "Movinf to 1.0"
+    kubernets.io/change-cause: "Movinf to 1.29.7"
 spec:
   replicas: 2
   selector:
@@ -21,4 +21,4 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:stable-alpine3.23-perl
+          image: nginx:1.29.7
