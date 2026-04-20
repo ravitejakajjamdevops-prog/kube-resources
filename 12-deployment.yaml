@@ -5,6 +5,8 @@ metadata:
   labels:
     project: roboshop
     component: frontend
+  annotations:
+    kubernets.io/change-cause: "Movinf to 1.0"
 spec:
   replicas: 2
   selector:
