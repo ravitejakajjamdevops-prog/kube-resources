@@ -12,7 +12,7 @@ spec:
   - image: almalinux:9
     name: almalinux
     volumeMounts:
-    - mountPath: /var/log/nginx
+    - mountPath: /mntnginx
       name: nginx-logs
       readOnly: true
   volumes:
